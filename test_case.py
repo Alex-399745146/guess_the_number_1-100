@@ -1,9 +1,5 @@
-# guess_the_number_1-100
-Мини проект по окончанию курса: "Угадайка чисел"
-1. Заголовок программы
-2. Функция проверки корректности введенных данных
+import random
 
-Теск кейс функции
 def is_valid(x):
     if x.isalnum():
         if x.isdigit():
@@ -16,6 +12,7 @@ def is_valid(x):
             return False
     else:
         return False
+
 def test_is_valid(n):
     for _ in range(5):
         n = str('')
@@ -25,9 +22,7 @@ def test_is_valid(n):
                 print('Корректные_данные     ===>', n)
             else:
                 print('Не_корректные_данные  ===>', n)
-n = 1
-test_is_valid(n)
 
-3. Основной цикл программы
-4. Сравнение введенного числа с загаданным
-5. 
+n = 1
+
+test_is_valid(n)
